@@ -64,11 +64,11 @@ The platform contains the following functionality:
 ## Technologies Used
 The platform uses the following technologies:
 
-HTML/CSS - For front-end elements and styling
-JavaScript - For front-end interactive features, and back-end functionality
-PHP – For backend functionality and database interactions.
-MySQL - For database interactions 
-PHPMailer - For sending password reset emails
+- HTML/CSS - For front-end elements and styling
+- JavaScript - For front-end interactive features, and back-end functionality
+- PHP – For backend functionality and database interactions.
+- MySQL - For database interactions 
+- PHPMailer - For sending password reset emails
 
 
 ## Project Structure
