@@ -1,7 +1,7 @@
 # University Dissertation Solo Project - Competetive Gym Platform with Gamification Features 
 
 ## Overview
-This project was developed for a university final year dissertation solo project. The system is a competitive gym platform, where users of varying levels of skill and experience can rank against each other for a variety of gym exercises. Users can create private leaderboards to compete with friends, as well as join public leaderboards to compete with user's worldwide. To add an entry to a leaderboard, user's must upload a video with it as proof of completion. User's can then view each others' entries on the leaderboard, and report any that seem illegitimate. They can also create and join leagues, which include customisable leaderboards for 5 different exercises, and an overall league table based on these. Leagues have a customisable duration, allowing for competition over a set time period. 
+This project was developed for a university final year dissertation solo project. The system is a competitive gym platform, where users of varying levels of skill and experience can rank against each other for a variety of gym exercises. Users can create private leaderboards to compete with friends, as well as join public leaderboards to compete with users worldwide. To add an entry to a leaderboard, users must upload a video with it as proof of completion. Users can then view each others' entries on the leaderboard, and report any that seem illegitimate. They can also create and join leagues, which include customisable leaderboards for 5 different exercises, and an overall league table based on these. Leagues have a customisable duration, allowing for competition over a set time period. 
 
 Gamification elements were also included in the platform to incentivise consistent user interaction, with a progression/levelling system where users can earn XP by doing various things, which causes them to level up. There is also a daily reward system, which incentivises daily use, and this reward is improved as the user's level increases. Users can also earn rewards for finishing leagues, which improve the higher the finish. Part of this reward is a virtual currency, which is used to buy items in the store. This store includes various gym related products (thus relevant to the subject matter), and when purchased, gives the user a code which can be used in the checkout for that real life store to buy the associated product. For example, one item is a MyProtein shaker cup, which would then give the user a code to use in the MyProtein checkout. For obvious reasons, these codes are not real and do not actually work. 
 
@@ -26,14 +26,16 @@ The platform contains the following functionality:
 - Show leaderboard entry (including the retrieval and display of the corresponding video)
 - Report leaderboard entry
 - Delete leaderboard entry
-- Create leaderboard (including customisable exercise and number of reps)
-- Join leaderboard (using a "join code" system)
+- Create private leaderboard (including customisable exercise and number of reps)
+- Join private leaderboard (using a "join code" system)
+- Admin privileges (leaderboard admin can remove user entries, or users entirely from the leaderboard) 
 
 ### Leagues
 - Create league (including 5 customisable leaderboards and a customisable duration)
 - Join league (using a "join code" system)
 - Overall league table (calculated using based on each member's performance accross the 5 leaderboards)
 - End of league rewards (calculated based on the user's final position in the league table)
+- Admin privileges (league admin can remove user entries from leaderboards, or users entriely from the league)
 
 ### Progression
 - XP-based levelling system (with XP per level algorithm)
@@ -51,9 +53,12 @@ The platform contains the following functionality:
 
 ### System-Wide Features 
 - Clean, modern, visually appealing website design and layout
-- Seamless navigation
-- Automcatic edirect to login page across whole system for users that aren't logged in
+- Seamless navigation throughout the platform. 
+- Thorough validation of all input fields throughout the platform. 
+- Secure data handling. 
+- Session management to provide personalised user experience and restrict access to main application from non-logged in users. 
 - Confirmation modals used throughout (to confirm important user actions, or confirm the outcome of an action)
+- Referential integrity is maintained throughout the system in all instances where a user of their corresponding information is deleted.
 
 
 ## Technologies Used
