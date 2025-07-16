@@ -1,6 +1,76 @@
+# University Dissertation Solo Project - Competetive Gym Platform with Gamification Features 
+
+## Overview
+This project was developed for a university final year dissertation solo project. The system is a competitive gym platform, where user's of varying levels of skill and experience can rank against each other for a variety of gym exercises. Users can create private leaderboards to compete with friends, as well as join public leaderboards to compete with user's worldwide. To add an entry to a leaderboard, user's must upload a video with it as proof of completion. User's can then view each others' entries on the leaderboard, and report any that seem illegitimate. They can also create and join leagues, which include customisable leaderboards for 5 different exercises, and an overall league table based on these. Leagues have a customisable duration, allowing for competition over a set time period. 
+
+Gamification elements were also included in the platform to incentivise consistent user interaction, with a progression/levelling system where users can earn XP by doing various things, which causes them to level up. There is also a daily reward system, which incentivises daily use, and this reward is improved as the user's level increases. Users can also earn rewards for finishing leagues, which improve the higher the finish. Part of this reward is a virtual currency, which is used to buy items in the store. This store includes various gym related products (thus relevant to the subject matter), and when purchased, gives the user a code which can be used in the checkout for that real life store to buy the associated product. For example, one item is a MyProtein shaker cup, which would then give the user a code to use in the MyProtein checkout. For obvious reasons, these codes are not real and do not actually work. 
+
+The platform naturally also includes an account system, with a login, signup and password reset page, all containing thorough, in-depth validation and verification. The password reset page comes with fully functioning email functionality that sends a password reset link to the user's email. User's can also edit their account details when logged in, and this comes with the same in-depth validation.
+
+As this application is heavilly focussed on the processing and retrieval of user data, it particularly demonstrates a thorough understanding and application of relational database management, more specifically using PHP and MySQL. 
 
 
-## INSTRUCTIONS TO RUN CODE
+## Key Features
+The platform contains the following functionality:
+
+### Account
+- Login (with email and password verification)
+- Sign-up (with email verification and thorough validation of all details)
+- Password Reset (with email verification, email sending functionality, password reset link verification using a token, and password validation)
+- Edit Account details (with email verification and thorough validation of all details)
+- Logout
+- Delete Account (with all user entries removed from all tables in database, ensuring referntial integrity is upheld)
+
+### Leaderboards
+- Add leaderboard entry (with video uploading, containing validation for file type and size)
+- Show leaderboard entry (including the retrieval and display of the corresponding video)
+- Report leaderboard entry
+- Delete leaderboard entry
+- Create leaderboard (including customisable exercise and number of reps)
+- Join leaderboard (using a "join code" system)
+
+### Leagues
+- Create league (including 5 customisable leaderboards and a customisable duration)
+- Join league (using a "join code" system)
+- Overall league table (calculated using based on each member's performance accross the 5 leaderboards)
+- End of league rewards (calculated based on the user's final position in the league table)
+
+### Progression
+- XP-based levelling system (with XP per level algorithm)
+- Animations for level-based activities (including gaining XP or levelling up)
+
+### Daily Reward
+- Level based reward (with algorithm that calculates reward based on user's level)
+- Timestamp of last reward claim, indicating if reward is available to claim (if unavailable, time remaining until next available is displayed)
+- Animation for claiming reward
+
+### Store
+- Virtual currency used to purchase items
+- Gym-related product codes
+- Balance checking to ensure item is affordable, and corresponding error if not
+
+### System-Wide Features 
+- Clean, modern, visually appealing website design and layout
+- Seamless navigation
+- Automcatic edirect to login page across whole system for users that aren't logged in
+- Confirmation modals used throughout (to confirm important user actions, or confirm the outcome of an action)
+
+
+## Technologies Used
+The platform uses the following technologies:
+
+HTML/CSS - For front-end elements and styling
+JavaScript - For front-end interactive features, and back-end functionality
+PHP – For backend functionality and database interactions.
+MySQL - For database interactions 
+PHPMailer - For sending password reset emails
+
+
+## Project Structure
+The project is clearly structured, divided into folders based on the main components of the system.
+
+
+# INSTRUCTIONS TO RUN CODE
 
 ### REQUIREMENTS 
 - PHP
@@ -8,10 +78,10 @@
 - Composer
   
 ### CONFIGURATION STEPS 
-1. Download Project folder and extract the .zip file. 
-2. Move the unzipped project folder into the XAMPP directory: 
-o Move it to C:\xampp\htdocs\ 
-o The full path should look like C:\xampp\htdocs\finalyearproject\ 
+1. Download Project folder. 
+2. Move the project folder into the XAMPP directory: 
+  - Move it to C:\xampp\htdocs\ 
+  - The full path should look like C:\xampp\htdocs\finalyearproject\ 
 3. Open the XAMPP control panel and start Apache and MySQL. 
 4. Visit http://localhost/phpmyadmin and create a new database. 
 5. Import the provided SQL file in order to populate the database as intended. 
@@ -39,7 +109,7 @@ to the file.
 - The missing extensions should now be enabled. 
 
 
-## DISCLAIMERS AND INSTRUCTIONS FOR TESTING SPECIFIC FUNCTIONALITY/SCENARIOS
+# DISCLAIMERS AND INSTRUCTIONS FOR TESTING SPECIFIC FUNCTIONALITY/SCENARIOS
 
 (Disclaimer) For the existing user entries, the same video of me performing an exercise in the gym has been used for all of them. When adding a leaderboard entry, feel free to upload any video as long as it is a valid video format and does not exceed the max file size (50MB).  
 
