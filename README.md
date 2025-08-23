@@ -1,4 +1,4 @@
-# University Dissertation Solo Project - Competetive Gym Platform with Gamification Features 
+# University Dissertation Solo Project - Competitive Gym Platform with Gamification Features 
 
 ## Overview
 This project was developed for a university final year dissertation solo project. The system is a competitive gym platform, where users of varying levels of skill and experience can rank against each other for a variety of gym exercises. Users can create private leaderboards to compete with friends, as well as join public leaderboards to compete with users worldwide. To add an entry to a leaderboard, users must upload a video with it as proof of completion. Users can then view each others' entries on the leaderboard, and report any that seem illegitimate. They can also create and join leagues, which include customisable leaderboards for 5 different exercises, and an overall league table based on these. Leagues have a customisable duration, allowing for competition over a set time period. 
